@@ -100,13 +100,14 @@ section{padding:4rem 2rem;max-width:900px;margin:0 auto;position:relative;z-inde
 .stat-label{font-size:12px;color:var(--hint)}
 
 /* SKILLS */
-.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
-.skill-item{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.2rem}
-.skill-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.8rem}
 .skill-name{font-size:13.5px;font-weight:500;color:var(--ink)}
-.skill-pct{font-size:12px;color:var(--teal);font-family:'JetBrains Mono',monospace;font-weight:500}
-.skill-track{height:6px;background:var(--bg3);border-radius:3px;overflow:hidden}
-.skill-bar{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--teal),#4db89a);width:0%;transition:width 1.2s cubic-bezier(0.4,0,0.2,1)}
+.skill-item{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:0.9rem 1rem;transition:all 0.25s}
+
+.skill-name{font-size:13.5px;font-weight:500;color:var(--ink)}
+
+
+
 
 /* PREREQS */
 .prereq-grid{display:flex;flex-direction:column;gap:10px}
@@ -226,6 +227,30 @@ footer a:hover{text-decoration:underline}
   .comm-grid{grid-template-columns:1fr}
 }
 
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:1.5rem;align-items:start}
+.about-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:1.6rem}
+.about-text{font-size:14px;color:var(--muted);line-height:1.75}
+.about-facts{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:1.4rem;display:flex;flex-direction:column;gap:12px}
+.fact-item{display:flex;flex-direction:column;gap:3px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+.fact-item:last-child{border-bottom:none;padding-bottom:0}
+.fact-label{font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--hint)}
+.fact-val{font-size:13.5px;color:var(--ink);font-weight:500}
+@media(max-width:640px){.about-grid{grid-template-columns:1fr}}
+
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:1.5rem;align-items:start}
+.about-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:1.6rem}
+.about-text{font-size:14px;color:var(--muted);line-height:1.75}
+.about-facts{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:1.4rem;display:flex;flex-direction:column;gap:12px}
+.fact-item{display:flex;flex-direction:column;gap:3px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+.fact-item:last-child{border-bottom:none;padding-bottom:0}
+.fact-label{font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--hint)}
+.fact-val{font-size:13.5px;color:var(--ink);font-weight:500}
+@media(max-width:640px){.about-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -241,7 +266,7 @@ footer a:hover{text-decoration:underline}
   <span class="nav-name">Chinni Sree Addagalla</span>
   <div class="nav-right">
     <ul class="nav-links">
-      <li><a href="#contributions">Work</a></li>
+      <li><a href="#about">About</a></li><li><a href="#about">About</a></li><li><a href="#contributions">Work</a></li>
       
       
       <li><a href="#timeline">Journey</a></li>
@@ -281,8 +306,9 @@ footer a:hover{text-decoration:underline}
         <a class="hlink" href="https://github.com/ChinniSree" target="_blank">
           <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>GitHub
         </a>
-        <a class="hlink" href="https://x.com/AddagallaS94108" target="_blank">
-          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>Twitter
+        
+        <a class="hlink" href="https://www.linkedin.com/in/chinni-sree-addagalla-1b972a1a3" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>LinkedIn
         </a>
         <a class="hlink" href="https://mastodon.social/@chinnisree" target="_blank">
           <svg viewBox="0 0 24 24"><path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"/></svg>Mastodon
@@ -296,34 +322,23 @@ footer a:hover{text-decoration:underline}
   </div>
 </div>
 
-<!-- STATS -->
-<section style="padding-top:2rem;padding-bottom:2rem">
-  <div class="stats-row reveal">
-    <div class="stat-card"><div class="stat-num" data-count="3">0</div><div class="stat-label">Tasks Completed</div></div>
-    <div class="stat-card"><div class="stat-num" data-count="5">0</div><div class="stat-label">Pre-Reqs Done</div></div>
-    
-    <div class="stat-card"><div class="stat-num" data-count="4">0</div><div class="stat-label">Documents Processed</div></div>
-  </div>
-</section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-eyebrow reveal">
-    <div class="eyebrow-line"></div>
-    <span class="eyebrow-text">Skills & Tools</span>
-    <div class="eyebrow-line"></div>
-  </div>
-  <div class="skills-grid reveal">
-    <div class="skill-item"><div class="skill-header"><span class="skill-name">Python</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-bar" data-pct="85"></div></div></div>
-    <div class="skill-item"><div class="skill-header"><span class="skill-name">OCR / Docling</span><span class="skill-pct">80%</span></div><div class="skill-track"><div class="skill-bar" data-pct="80"></div></div></div>
-    <div class="skill-item"><div class="skill-header"><span class="skill-name">RamaLama / AI Models</span><span class="skill-pct">70%</span></div><div class="skill-track"><div class="skill-bar" data-pct="70"></div></div></div>
-    <div class="skill-item"><div class="skill-header"><span class="skill-name">Open Source Contribution</span><span class="skill-pct">75%</span></div><div class="skill-track"><div class="skill-bar" data-pct="75"></div></div></div>
-    <div class="skill-item"><div class="skill-header"><span class="skill-name">Docker / Containers</span><span class="skill-pct">65%</span></div><div class="skill-track"><div class="skill-bar" data-pct="65"></div></div></div>
-    <div class="skill-item"><div class="skill-header"><span class="skill-name">Technical Writing</span><span class="skill-pct">90%</span></div><div class="skill-track"><div class="skill-bar" data-pct="90"></div></div></div>
-  </div>
-</section>
+
+
 
 <!-- PREREQS -->
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-eyebrow reveal">
+    <div class="eyebrow-line"></div>
+    <span class="eyebrow-text">About Me</span>
+    <div class="eyebrow-line"></div>
+  </div>
+  <div class="about-card reveal">
+    <p class="about-text">I am a Computer Science graduate from the University of Oklahoma (MS, December 2025). During my graduate research I built scalable web applications, designed data pipelines, and worked with React, PostgreSQL, and Google Cloud Platform. Most recently I completed an AI Automation Externship at Wayfair where I built LLM-powered agents using Google Gemini, prompt engineering pipelines, and RAG workflows. I am passionate about open source AI tooling and contributing to real-world projects that make AI more accessible and accurate.</p>
+  </div>
+</section>
+
 <section id="prereqs">
   <div class="section-eyebrow reveal">
     <div class="eyebrow-line"></div>
@@ -459,6 +474,29 @@ footer a:hover{text-decoration:underline}
   </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-eyebrow reveal">
+    <div class="eyebrow-line"></div>
+    <span class="eyebrow-text">Skills &amp; Tools</span>
+    <div class="eyebrow-line"></div>
+  </div>
+  <div class="skills-grid reveal">
+    <div class="skill-item"><div class="skill-name">Python</div></div>
+    <div class="skill-item"><div class="skill-name">JavaScript</div></div>
+    <div class="skill-item"><div class="skill-name">OCR / Docling</div></div>
+    <div class="skill-item"><div class="skill-name">RamaLama / AI Models</div></div>
+    <div class="skill-item"><div class="skill-name">LLMs &amp; Prompt Engineering</div></div>
+    <div class="skill-item"><div class="skill-name">RAG Pipelines</div></div>
+    <div class="skill-item"><div class="skill-name">Docker / Containers</div></div>
+    <div class="skill-item"><div class="skill-name">PostgreSQL / SQL</div></div>
+    <div class="skill-item"><div class="skill-name">React / D3.js</div></div>
+    <div class="skill-item"><div class="skill-name">Google Cloud Platform</div></div>
+    <div class="skill-item"><div class="skill-name">Open Source Contribution</div></div>
+    <div class="skill-item"><div class="skill-name">Technical Writing</div></div>
+  </div>
+</section>
+
 <footer>
   Chinni Sree Addagalla &nbsp;·&nbsp; Outreachy 2026 &nbsp;·&nbsp;
   <a href="https://fedoraproject.org" target="_blank">Fedora Project</a> / RamaLama RAG &nbsp;·&nbsp;
@@ -530,7 +568,7 @@ const sObs=new IntersectionObserver(es=>es.forEach(e=>{
     sObs.unobserve(e.target);
   }
 }),{threshold:0.3});
-document.querySelectorAll('.skills-grid').forEach(el=>sObs.observe(el));
+
 
 // ACCORDION
 function toggleFindings(btn){
